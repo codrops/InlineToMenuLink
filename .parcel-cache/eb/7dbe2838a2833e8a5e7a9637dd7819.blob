@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Inline to Menu Link Animation | Demo 1 | Codrops</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Codrops">
+		<link rel="shortcut icon" href="341a7ca65c476e9195f17bbb4d73e830">
+		<link rel="stylesheet" href="1530f69acc7c8b673da8e74b65b35359">
+		<link rel="stylesheet" type="text/css" href="f54802ad23422b2dd67f74c57146c65d">
+		<script data-parcel-key="cb2664e1f0ff0770550988136f751301">document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	</head>
+	<body class="demo-1 loading">
+		<main>
+			<div class="frame">
+				<h1 class="frame__title oh"><span>Inline to Menu Link Animation</span></h1>
+				<nav class="frame__links">
+					<a href="" class="oh"><span>Previous demo</span></a>
+					<a href="" class="oh"><span>Article</span></a>
+					<a href="" class="oh"><span>GitHub</span></a>
+				</nav>
+				<p class="frame__credits oh"><span>Based in this <a href="">Dribbble shot</a> by <a href="">Author</a></span></p>
+				<a class="frame__author oh" href=""><span>@codrops</span></a>
+				<p class="frame__category oh view-content"><span>Select a category</span></p>
+				<button class="unbutton frame__close oh view-content"><span>Close</span></button>
+			</div>
+			<div class="content content--menu">
+				<blockquote class="content__quote" data-splitting="">You must <a class="menu-item">understand</a> the whole of life, not just one little part of it. That is why you must read, that is why you must look at the skies, that is why you must sing, and dance, and write poems, and suffer, and understand, for all that is life</blockquote>
+			</div>
+		</main>
+		<script src="06dfe9f8db92a79f21cf80f953a0a070"></script>
+		<!--script src="https://tympanus.net/codrops/adpacks/cda.js"></script-->
+		<!-- 
+	
+		- add class .menu-item--active when clicking on one
+		- add class .content--menu to .content when in new view
+
+		-->
+	</body>
+</html>

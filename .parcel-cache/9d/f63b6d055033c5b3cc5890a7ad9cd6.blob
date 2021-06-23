@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Inline to Menu Link Animation | Demo 1 | Codrops</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Codrops">
+		<link rel="shortcut icon" href="e1905ad4e1b985b3143049b0c46bc846">
+		<link rel="stylesheet" href="6c9c787f18cc3beb3d8b8b7fd0264a63">
+		<link rel="stylesheet" type="text/css" href="37e171b812b641fe039fe4e6411eb8de">
+		<script data-parcel-key="97cc518d4e5b85b43a0f34d536d37212">document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	</head>
+	<body class="loading">
+		<main>
+			<div class="frame">
+				<h1 class="frame__title oh"><span>Inline to Menu Link Animation</span></h1>
+				<nav class="frame__links">
+					<a href="ed590c1de539987687605401513e84ac" class="oh"><span>Previous demo</span></a>
+					<a href="f40da5b1df64dd87e0a64544c3fc2803" class="oh"><span>Article</span></a>
+					<a href="4ff8bcb32aa84fed1ef31d6c57ef1bfd" class="oh"><span>GitHub</span></a>
+				</nav>
+				<p class="frame__credits oh"><span>Based on <a href="3d27754abd423170c9e69daef80d1bc3">"Image Carousel"</a> by <a href="5b0330bc6247cf328713ff12a261fe0d">Matthew Hall</a></span></p>
+				<a class="frame__author oh" href="71639622dd76bde407f50e4fbe7384af"><span>@codrops</span></a>
+				<p class="frame__category oh view-content"><span>Select a category</span></p>
+				<button class="unbutton frame__close oh view-content"><span>Close</span></button>
+			</div>
+			<div class="content">
+				<blockquote class="content__quote" data-splitting="">
+					During his <a class="menu-item" href="#gallery-1">earth</a> period, man experiences the <a class="menu-item" href="#gallery-2">blissful</a> feeling of being <a class="menu-item" href="#gallery-3">fashioned</a> into such forms. The absorption of the watery parts is felt in the soul as an <a class="menu-item" href="#gallery-4">accession</a> of force, or inner strength.</blockquote>
+			</div>
+			<div class="galleries">
+				<div class="gallery" id="gallery-1">
+					<img class="gallery__img" src="2c4d35efe67af7d43fde92348274d784" alt="Some image">
+					<img class="gallery__img" src="dc10b221a6b19dd720444dfc4fccda75" alt="Some image">
+					<img class="gallery__img" src="d3e87c725959b6003fb8715860ef540c" alt="Some image">
+					<img class="gallery__img" src="1787ad471330ae5c37828380a77ddd7a" alt="Some image">
+					<img class="gallery__img" src="2c9240d468bc7f1461ff05ec49bccf49" alt="Some image">
+					<img class="gallery__img" src="5b269cb46d9a5cab80a63ee78e821ba7" alt="Some image">
+					<img class="gallery__img" src="cc827ec99daf4c9ca2afc8c141170301" alt="Some image">
+					<img class="gallery__img" src="8adaf63b1cecca38e835c2ce4dfaf408" alt="Some image">
+				</div>
+				<div class="gallery" id="gallery-2">
+					<img class="gallery__img" src="0b62d87cf14d27695b3460917865d08f" alt="Some image">
+					<img class="gallery__img" src="cd975cd404efc74a3467ed51bd963eba" alt="Some image">
+					<img class="gallery__img" src="453d15aee260d9ab6d494afff7f11e08" alt="Some image">
+					<img class="gallery__img" src="cba0a87ef7c41571f00eb77935de35da" alt="Some image">
+					<img class="gallery__img" src="03043c20dfb80b01b4e2a0626ed0463b" alt="Some image">
+					<img class="gallery__img" src="ad3220faf7e2b63f87f9cecff038480c" alt="Some image">
+					<img class="gallery__img" src="3869bf7c2b9f1d3d0377dd9e15315307" alt="Some image">
+					<img class="gallery__img" src="68fbd7def2016431944442833cef93c4" alt="Some image">
+				</div>
+				<div class="gallery" id="gallery-3">
+					<img class="gallery__img" src="ffe1a3fd2a56d048e36e4e176564d6c8" alt="Some image">
+					<img class="gallery__img" src="40e556fdd1b7ccd790a3dde454a0dd3f" alt="Some image">
+					<img class="gallery__img" src="2f8006734dc501e58fe45dbd47056d07" alt="Some image">
+					<img class="gallery__img" src="e08706e2b334a39ce1fcd1eef10aeadd" alt="Some image">
+					<img class="gallery__img" src="2c9240d468bc7f1461ff05ec49bccf49" alt="Some image">
+					<img class="gallery__img" src="dc10b221a6b19dd720444dfc4fccda75" alt="Some image">
+					<img class="gallery__img" src="2c4d35efe67af7d43fde92348274d784" alt="Some image">
+					<img class="gallery__img" src="d3e87c725959b6003fb8715860ef540c" alt="Some image">
+				</div>
+				<div class="gallery" id="gallery-4">
+					<img class="gallery__img" src="8adaf63b1cecca38e835c2ce4dfaf408" alt="Some image">
+					<img class="gallery__img" src="03043c20dfb80b01b4e2a0626ed0463b" alt="Some image">
+					<img class="gallery__img" src="cc827ec99daf4c9ca2afc8c141170301" alt="Some image">
+					<img class="gallery__img" src="cba0a87ef7c41571f00eb77935de35da" alt="Some image">
+					<img class="gallery__img" src="5b269cb46d9a5cab80a63ee78e821ba7" alt="Some image">
+					<img class="gallery__img" src="ad3220faf7e2b63f87f9cecff038480c" alt="Some image">
+					<img class="gallery__img" src="2c9240d468bc7f1461ff05ec49bccf49" alt="Some image">
+					<img class="gallery__img" src="68fbd7def2016431944442833cef93c4" alt="Some image">
+				</div>
+				<button class="galleries__button unbutton">Explore</button>
+				<div class="galleries__deco" aria-hidden="true">Serenity Complexity Fidelity Generosity</div>
+			</div><!-- /gallery-wrap-->
+		</main>
+		<script src="0654becbdd7963508a8180fac8f1c2da"></script>
+		<script src="5dcc75a9b5526c879e8f31eb573b23f3"></script>
+	</body>
+</html>

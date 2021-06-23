@@ -1,0 +1,271 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 12px;
+}
+
+body {
+	margin: 0;
+	--color-text: #000;
+	--color-alt: #000;
+	--color-bg: #dcd7cd;
+	--color-link: #000;
+	--color-link-hover: #000;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: usual,-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+}
+
+.js .loading::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+
+a:hover {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus {
+	/* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+	outline: none;
+	background: lightgrey;
+}
+
+a:focus:not(:focus-visible) {
+	/* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+	background: transparent;
+}
+
+a:focus-visible {
+	/* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+	outline: 2px solid red;
+	background: transparent;
+}
+
+.unbutton {
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font: inherit;
+}
+
+.unbutton:focus {
+	outline: none;
+}
+
+.js .oh {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+.js .oh > span {
+	display: inline-block;
+	will-change: transform;
+}
+
+.frame {
+	padding: 3rem 5vw;
+	text-align: center;
+	position: relative;
+	z-index: 1000;
+	text-transform: uppercase;
+}
+
+.frame a {
+	font-weight: 700;
+}
+
+.frame__title {
+	font-size: 1rem;
+	margin: 0 0 1rem;
+	font-weight: normal;
+}
+
+.frame__links {
+	display: inline;
+}
+
+.frame__links a:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.frame__close {
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.frame__close span::before {
+	content: "\2715";
+	margin: 0 0.25rem 0;
+	vertical-align: top;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: calc(100vh - 13rem);
+	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 6rem 4vw;
+}
+
+.content__quote {
+	font-size: 4.5vw;
+	font-weight: 300;
+	margin: 0;
+	text-indent: 20vw;
+}
+
+.content__quote span.word {
+	will-change: transform, opacity;
+}
+
+.menu-item {
+	font-weight: 400;
+	position: relative;
+	display: inline-block;
+	text-indent: 0;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.menu-item::after {
+	content: '';
+	position: absolute;
+	top: 89%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: var(--color-alt);
+	z-index: -1;
+	transform: scaleX(0);
+	transform-origin: 100% 50%;
+	transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover::after,
+.menu-item:active::after {
+	transform: scaleX(1);
+	transform-origin: 0% 50%;
+	transition-timing-function: ease-out;
+}
+
+.splitting .word {
+	text-indent: 0;
+}
+
+.splitting > .word {
+	pointer-events: none;
+}
+
+@media screen and (min-width: 53em) {
+	.frame {
+		position: fixed;
+		text-align: left;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		max-width: none;
+		height: 100vh;
+		padding: 3rem 4vw;
+		pointer-events: none;
+		grid-template-columns: 20vw 1fr 1fr auto;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: 'title links category close'
+							'... ... ... ...'
+							'author ad ad credits';
+	}
+	.frame__title {
+		grid-area: title;
+		margin: 0;
+	}
+	.frame__links {
+		grid-area: links;
+		padding: 0;
+		justify-self: start;
+	}
+	.frame__author {
+		grid-area: author;
+		align-self: end;
+	}
+	.frame__credits {
+		grid-area: credits;
+		justify-self: end;
+		align-self: end;
+		margin: 0;
+	}
+	.frame__close {
+		grid-area: close;
+		justify-self: end;
+	}
+	.frame__category {
+		grid-area: category;
+		justify-self: end;
+		margin: 0;
+	}
+	.frame a, 
+	.frame button {
+		pointer-events: auto;
+	}
+	.content {
+		height: 100vh;
+		justify-content: center;
+	}
+}
